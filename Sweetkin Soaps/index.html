@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+        <!-- I have added flexbox to this page. -->
+        <!-- I also added css grid to products.html -->
+        <head>
+            <title>Sweetkin Soaps</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+            <!-- link to the external stylesheet -->
+            <link rel="stylesheet" href="style-sheet.css">
+
+            <style>
+                /*flexbox container styling*/
+                #flexbox {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+
+                /*image styling*/
+                #flexbox > img {
+                    justify-content: flex-end;
+                    width: 600px;
+                    height: 400px;
+                    border: 10px solid #dddddd;
+                }
+
+                /* paragraph styling*/
+                #flexbox > p {
+                    text-align: center;
+                    width: 500px;
+                    color: #dddddd;
+                    justify-content: flex-start;
+                }
+
+                /*Header Styling*/
+                h1 {
+                    position: relative;
+                    top: 100px;
+                    font-size: 300%;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1>Sweetkin Soaps</h1>
+
+            <!-- navigation links/buttons -->
+            <nav>
+                <div class="navigation">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <br>
+                <div class="navigation">
+                    <a href="products.html">Products</a>
+                </div>
+
+                <br>
+                <div class="navigation">
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+
+            <!-- Flexbox div container-->
+            <div id="flexbox">
+                <!-- image -->
+                <img src="soaps.jpg" alt="soaps">
+
+                <p>
+                    <span>Sweetkin Soaps</span> is a home business from Winnipeg. We make homemade soaps made with all
+                    natural ingredients and no artificial scents or colours. Next time you buy soap.
+                    Consider supporting a small home business and get our all natural soaps.
+                </p>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Sweetkin Soaps</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+            <!-- link to the external stylesheet -->
+            <link rel="stylesheet" href="style-sheet.css">
+
+            <style>
+                /*header styling*/
+                h1 {
+                  position: relative;
+                  top: 100px;
+                  font-size: 300%;  
+                }
+
+                /*grid container styling*/
+                #grid {
+                    position: relative;
+                    left: 100px;
+                    display: grid;
+                    gap: 10px;
+                    grid-template-areas: 
+                    "img1 img2"
+                    "ing1 ing2"
+                    "p1 p2";
+                    height: 100%;
+                    width: 100%;
+                }
+
+                /*styling for all the grid elements*/
+                #img1 {
+                    grid-area: img1;
+                    height: 300px;
+                    width: 500px;
+                }
+
+                #img2 {
+                    grid-area: img2;
+                    height: 300px;
+                    width: 500px;
+                }
+
+                #ingredients {
+                    grid-area: ing1;
+                    height: auto;
+                    width: 400px;
+                    color: #dddddd;
+                }
+
+                #ingredients2 {
+                    grid-area: ing2;
+                    height: auto;
+                    width: 400px;
+                    color: #dddddd;
+                }
+
+                #p1 {
+                    grid-area: p1;
+                    height: auto;
+                    width: 400px;
+                }
+
+                #p2 {
+                    grid-area: p2;
+                    height: auto;
+                    width: 400px;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1>Our Products</h1>
+
+            <!-- navigation links -->
+            <nav>
+                <div class="navigation">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <br>
+                <div class="navigation">
+                    <a href="products.html">Products</a>
+                </div>
+
+                <br>
+                <div class="navigation">
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+
+            <!-- CSS Grid container -->
+            <div id="grid">
+                <!-- image and ingredients list -->
+                <img src="acne-soap.jpg" alt="Acne Soap" id="img1">
+
+                <div id="ingredients">
+                    <h3 id="header">Ingredients:</h3>
+                    <ul id="list">
+                        <li>Olive Fruit Oil</li>
+                        <li>Water</li>
+                        <li>Coconut Oil</li>
+                        <li>Palm Oil</li>
+                        <li>Lye</li>
+                        <li>Castor Seed Oil</li>
+                        <li>Shea Butter Fruit</li>
+                        <li>Eucalyptus Leaf Oil</li>
+                        <li>Orange Peel Oil</li>
+                        <li>Fullers Earth Clay</li>
+                        <li>Kelp Powder</li>
+                        <li>Myrrh Gum Powder</li>
+                    </ul>
+                </div>
+
+                <!-- product description -->
+                <p id="p1">
+                    This is a soap that is great for using on bad acne. It works really well to clear up
+                    any acne and can be used on a daily basis. It might not smell great, but it works well
+                    and has no artificial scents and it is made of all natural ingredients.
+                </p>
+
+                <!-- image and ingredients list -->
+                <img src="coffee-soap.jpg" alt="Coffee Soap" id="img2">
+
+                <div id="ingredients2">
+                    <h3 id="header2">Ingredients:</h3>
+                    <ul id="list2">
+                        <li>Olive Fruit Oil</li>
+                        <li>Water</li>
+                        <li>Coconut Oil</li>
+                        <li>Coffee Grounds</li>
+                        <li>Palm Oil</li>
+                        <li>Lye</li>
+                        <li>Shea Butter Fruit</li>
+                        <li>Lemon Peel Oil</li>
+                    </ul>
+                </div>
+
+                <!-- product description -->
+                <p id="p2">
+                    This soap is great for getting rid of bad smells on your hands. So if you have any sort of onion smell
+                    or any other bad smell like that. This will do the trick. Like all our other soaps,
+                    this is made from all natural ingredients and has no artificial scents or colours.
+                </p>
+            </div>
+        </body>
+    </html>
